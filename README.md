@@ -1,88 +1,440 @@
-
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-view%20app-46E3B7?style=flat-square&logo=render&logoColor=white)](https://ford-price-intelligence-1.onrender.com)
-![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=flat-square&logo=fastapi&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=flat-square&logo=docker&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-c6a15b?style=flat-square)
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=3000&pause=1000&color=C084FC&center=true&vCenter=true&width=850&lines=🚗+Ford+Vehicle+Price+Intelligence;End-to-End+Machine+Learning+Pipeline;Random+Forest+•+FastAPI+•+scikit-learn;%7C+Deployed+by+Abhishek+Grover" alt="Typing animation" />
 
-**A full-stack machine learning system that predicts Ford vehicle market valuations with high fidelity — powered by an optimized regression model, served through a high-performance FastAPI backend and a custom dark-themed interface.**
+  <br>
 
-</div> 
+  <p>
+    <a href="https://ford-price-intelligence-1.onrender.com">
+      <img src="https://img.shields.io/badge/Live%20Demo-46E3B7?style=flat-square&logo=render&logoColor=white" alt="Live Demo">
+    </a>
+    <img src="https://img.shields.io/badge/Python-3.11%2B-8B5CF6?style=flat-square&logo=python&logoColor=white" alt="Python">
+    <img src="https://img.shields.io/badge/FastAPI-0.115-10B981?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+    <img src="https://img.shields.io/badge/scikit--learn-1.6-F59E0B?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn">
+    <img src="https://img.shields.io/badge/JavaScript-F472B6?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript">
+    <img src="https://img.shields.io/badge/License-MIT-E879F9?style=flat-square" alt="MIT License">
+  </p>
 
----
+  <p>
+    <strong>Production-oriented vehicle price prediction powered by machine learning, FastAPI, and a custom web interface.</strong>
+  </p>
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Live Demo](#live-demo)
-- [Key Features](#key-features)
-- [Architecture](#architecture)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [API Reference](#api-reference)
-- [Deployment](#deployment)
-- [Engineering Notes](#engineering-notes)
-- [License](#license)
-- [Connect](#connect)
+</div>
 
 ---
 
-## Overview
+## 📑 Table of Contents
 
-**Ford Price Intelligence** bridges raw automotive data and real-time predictive analytics. By serializing a production-grade machine learning model (`ford_price_predictor.pkl`) via `joblib` and integrating it into an asynchronous `FastAPI` application, the system delivers instant, reliable price estimations directly to a responsive user interface.
+* [Overview](#-overview)
+* [Live Demo](#-live-demo)
+* [Key Features](#-key-features)
+* [Architecture](#-architecture)
+* [Tech Stack](#-tech-stack)
+* [Project Structure](#-project-structure)
+* [Getting Started](#-getting-started)
+* [API Reference](#-api-reference)
+* [Deployment](#-deployment)
+* [Engineering Notes](#-engineering-notes)
+* [License](#-license)
+* [Connect](#-connect)
 
-No mock data or static placeholders—the application handles live user requests through an optimized REST API pipeline.
+---
 
-## Live Demo
+## 🔮 Overview
 
-**[ford-price-intelligence-1.onrender.com](https://ford-price-intelligence-1.onrender.com)**
+**Ford Price Intelligence** is an end-to-end machine learning application designed to estimate Ford vehicle market prices from structured automotive data.
 
-Experience the live application directly in your browser. Test out vehicle pricing inputs or run the codebase locally in under two minutes ([Getting Started](#getting-started)).
+The system takes vehicle attributes through a web interface, processes the request through a trained regression model, and returns a real-time predicted valuation through a **FastAPI REST API**.
 
-> *Hosted on Render's efficient cloud infrastructure. If the service has been idle, please allow 30–50 seconds for the initial cold start.*
+The complete workflow covers:
 
-## Key Features
+**Raw Data → EDA → Feature Engineering → Preprocessing → Model Training → Hyperparameter Optimization → Model Serialization → FastAPI → Web UI → Cloud Deployment**
 
-- 🔮 **Live ML-Powered Predictions** served over a fully documented REST API
-- 📊 **Robust Regression Model** optimized for high-precision automotive valuation
-- 🎨 **Sleek, Hand-Crafted Dark UI** built with custom CSS and modern typography (Fraunces & IBM Plex)
-- 🐳 **Containerization-Ready** via a clean Docker configuration for seamless orchestration
-- ⚡ **High-Performance Backend** built on FastAPI with strict Pydantic payload validation
+The trained model is serialized using `joblib` and integrated directly into the application for inference.
 
-## Architecture
+> **No static placeholders or mock predictions.**
+> Predictions are generated dynamically from user-provided vehicle attributes.
 
-The system follows a production-oriented machine learning pipeline, organized into logical layers that transform raw inputs into real-time price intelligence:
+---
+
+## 🚀 Live Demo
+
+### [Ford Price Intelligence](https://ford-price-intelligence-1.onrender.com)
+
+Test the deployed application directly in your browser.
+
+You can enter vehicle information and receive a machine-learning-based price prediction through the deployed FastAPI application.
+
+> **Note:** The application is hosted on Render. If the service has been idle, the first request may take some time because of the platform's cold-start behavior.
+
+---
+
+## ✨ Key Features
+
+| Feature                     | Description                                                            |
+| --------------------------- | ---------------------------------------------------------------------- |
+| 🔮 **ML Predictions**       | Generates real-time Ford vehicle price estimates                       |
+| 🌲 **Random Forest**        | Ensemble regression approach for nonlinear vehicle-price relationships |
+| ⚡ **FastAPI Backend**       | Lightweight, high-performance REST API                                 |
+| 🛡️ **Pydantic Validation** | Structured and validated prediction requests                           |
+| 🎨 **Custom UI**            | Dark-themed responsive frontend with custom CSS                        |
+| 📊 **Data Pipeline**        | EDA, preprocessing and feature engineering workflow                    |
+| 💾 **Model Serialization**  | Trained model stored using Joblib                                      |
+| 🐳 **Render Ready**         | Structured for container-based deployment                              |
+| ☁️ **Cloud Deployment**     | Deployed application accessible through Render                         |
+
+---
+
+## 🏗️ Architecture
+
+The application follows a layered machine learning architecture that transforms raw automotive data into real-time vehicle price intelligence.
 
 ```mermaid
 flowchart TD
-    subgraph L1["Data Layer"]
-        A[Ford Vehicle Dataset] --> B[Exploratory Data Analysis]
-        B --> C[Feature Engineering]
-        C --> D[Data Preprocessing]
+
+    A["🚗 Ford Vehicle Dataset"]
+
+    subgraph L1["📊 Data Layer"]
+        A --> B["Exploratory Data Analysis"]
+        B --> C["Feature Engineering"]
+        C --> D["Data Preprocessing"]
     end
 
-    subgraph L2["Model Layer"]
-        D --> E["Random Forest / Ensemble Regressor"]
+    subgraph L2["🤖 Model Layer"]
+        D --> E["Random Forest Regressor"]
         E --> F["Hyperparameter Optimization"]
-        F --> G["Model Serialization • Joblib"]
+        F --> G["Model Serialization"]
     end
 
-    subgraph L3["Service Layer"]
+    subgraph L3["⚡ Service Layer"]
         G --> H["FastAPI Backend"]
-        H --> I["REST API • /api/predict"]
+        H --> I["POST /api/predict"]
     end
 
-    subgraph L4["Presentation Layer"]
-        I --> J["HTML • CSS • JavaScript UI"]
+    subgraph L4["🎨 Presentation Layer"]
+        I --> J["HTML / CSS / JavaScript"]
         J --> K["Vehicle Price Prediction"]
     end
 
-    subgraph L5["Deployment Layer"]
+    subgraph L5["☁️ Deployment Layer"]
         K --> L["Render Cloud Deployment"]
-        L --> M["🚀 Live Ford Price Intelligence"]
+        L --> M["🚀 Live Application"]
     end
+```
 
+### Pipeline Flow
+
+```text
+Ford Dataset
+     │
+     ▼
+Exploratory Data Analysis
+     │
+     ▼
+Feature Engineering
+     │
+     ▼
+Data Preprocessing
+     │
+     ▼
+Random Forest Regressor
+     │
+     ▼
+Hyperparameter Optimization
+     │
+     ▼
+Joblib Model Artifact
+     │
+     ▼
+FastAPI REST API
+     │
+     ▼
+Custom Web Interface
+     │
+     ▼
+Real-Time Price Prediction
+```
+
+---
+
+## 🧰 Tech Stack
+
+| Layer                   | Technology                             |
+| ----------------------- | -------------------------------------- |
+| **Language**            | Python 3.11+                           |
+| **Backend**             | FastAPI                                |
+| **Validation**          | Pydantic v2                            |
+| **Server**              | Uvicorn                                |
+| **Machine Learning**    | scikit-learn                           |
+| **Data Processing**     | pandas, NumPy                          |
+| **Model Serialization** | Joblib                                 |
+| **Frontend**            | HTML5, CSS3, JavaScript                |
+| **Testing**             | pytest, HTTPX                          |
+| **Version Control**     | Git                                    |
+| **Containerization**    | Render                                 |
+| **Deployment**          | Render                                 |
+| **Typography**          | Fraunces, IBM Plex Sans, IBM Plex Mono |
+
+### Core Stack
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-8B5CF6?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/FastAPI-10B981?style=flat-square&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/scikit--learn-F59E0B?style=flat-square&logo=scikitlearn&logoColor=white"/>
+<img src="https://img.shields.io/badge/pandas-F472B6?style=flat-square&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-8B5CF6?style=flat-square&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-E879F9?style=flat-square&logo=javascript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=white"/>
+
+</p>
+
+---
+
+## 📁 Project Structure
+
+```text
+ford-price-intelligence/
+│
+├── main.py
+│   └── FastAPI application entrypoint,
+│       API routes and static file serving
+│
+├── requirements.txt
+│   └── Python dependencies
+│
+├── runtime.txt
+│   └── Python runtime specification
+│
+├── .python-version3
+│   └── Python version configuration
+│
+├── ford_price_predictor.pkl
+│   └── Serialized trained ML model
+│
+├── index.html
+│   └── Frontend interface
+│
+├── style.css
+│   └── Custom dark-themed styling
+│
+└── script.js
+    └── Frontend interaction and API communication
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/AbhishekGrover1/ford-price-intelligence.git
+cd ford-price-intelligence
+```
+
+### 2. Create a virtual environment
+
+**macOS / Linux**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+**Windows**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Start the FastAPI server
+
+```bash
+uvicorn main:app --reload
+```
+
+### 5. Open the application
+
+```text
+http://localhost:8000
+```
+
+---
+
+## 🔌 API Reference
+
+### `GET /`
+
+Serves the frontend application.
+
+**Response**
+
+```text
+HTML application interface
+```
+
+---
+
+### `POST /api/predict`
+
+Accepts vehicle attributes and returns a predicted Ford vehicle price.
+
+**Request**
+
+```http
+POST /api/predict
+Content-Type: application/json
+```
+
+**Example Response**
+
+```json
+{
+  "predicted_price": 18500
+}
+```
+
+> The exact request fields depend on the features implemented in the trained prediction pipeline.
+
+---
+
+## ☁️ Deployment
+
+The application is structured for cloud deployment using:
+
+```text
+Application
+     │
+     ▼
+FastAPI
+     │
+     ▼
+Uvicorn
+     │
+     ▼
+Render / Runtime Configuration
+     │
+     ▼
+Render
+     │
+     ▼
+Live Web Application
+```
+
+### Production Entry Point
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port $PORT
+```
+
+---
+
+## 🧠 Engineering Notes
+
+### Machine Learning
+
+The prediction system uses a **Random Forest regression approach**, allowing the model to capture nonlinear relationships between vehicle attributes and market price.
+
+### Model Persistence
+
+The trained model is serialized using:
+
+```python
+joblib
+```
+
+This allows the production application to load the trained artifact without retraining the model for every request.
+
+### API Design
+
+FastAPI provides:
+
+* Typed request handling
+* Pydantic validation
+* RESTful prediction endpoint
+* Automatic API documentation
+* Lightweight asynchronous server architecture
+
+### Frontend
+
+The frontend intentionally avoids heavy JavaScript frameworks.
+
+It uses:
+
+```text
+HTML5
+CSS3
+Vanilla JavaScript
+```
+
+This keeps the interface lightweight while maintaining direct communication with the prediction API.
+
+---
+
+## 🎯 Project Focus
+
+This project demonstrates practical implementation of:
+
+* Machine Learning regression
+* Feature engineering
+* Data preprocessing
+* Model optimization
+* Model serialization
+* REST API development
+* Frontend ↔ ML integration
+* Production-style inference
+* Cloud deployment
+
+**From dataset to deployed prediction system.**
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🤝 Connect
+
+<div align="center">
+
+### Abhishek Grover
+
+**AI/ML Engineer**
+
+Building practical systems around **Machine Learning · LLMs · RAG · AI Agents · MLOps**
+
+<br>
+
+<a href="https://github.com/AbhishekGrover1">
+  <img src="https://img.shields.io/badge/GitHub-111827?style=flat-square&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/abhishek-grover07/">
+  <img src="https://img.shields.io/badge/LinkedIn-8B5CF6?style=flat-square&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://abhishekgroverai.netlify.app/">
+  <img src="https://img.shields.io/badge/Portfolio-E879F9?style=flat-square&logo=googlechrome&logoColor=white"/>
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+**🚗 Ford Price Intelligence**
+
+*Designed • Engineered • Deployed by Abhishek Grover*
+
+</div>
