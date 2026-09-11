@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ford Price Predictor</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Mono:wght@600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="blobs" aria-hidden="true">
+    <span class="blob blob--one"></span>
+    <span class="blob blob--two"></span>
+  </div>
+
+  <main class="card">
+    <h1>Ford Price Predictor</h1>
+
+    <form id="predict-form" novalidate>
+      <div class="grid">
+
+        <div class="field">
+          <label for="model">Model</label>
+          <select id="model" name="model" required>
+            <option>B-MAX</option>
+            <option>C-MAX</option>
+            <option>EcoSport</option>
+            <option>Edge</option>
+            <option>Escort</option>
+            <option selected>Fiesta</option>
+            <option>Focus</option>
+            <option>Fusion</option>
+            <option>Galaxy</option>
+            <option>Grand C-MAX</option>
+            <option>Grand Tourneo Connect</option>
+            <option>KA</option>
+            <option>Ka+</option>
+            <option>Kuga</option>
+            <option>Mondeo</option>
+            <option>Mustang</option>
+            <option>Puma</option>
+            <option>Ranger</option>
+            <option>S-MAX</option>
+            <option>Streetka</option>
+            <option>Tourneo Connect</option>
+            <option>Tourneo Custom</option>
+            <option>Transit Tourneo</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="year">Year</label>
+          <input type="number" id="year" name="year" min="1996" max="2020" value="2018" required>
+        </div>
+
+        <div class="field">
+          <label for="transmission">Transmission</label>
+          <select id="transmission" name="transmission" required>
+            <option>Automatic</option>
+            <option selected>Manual</option>
+            <option>Semi-Auto</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="fuelType">Fuel Type</label>
+          <select id="fuelType" name="fuelType" required>
+            <option>Diesel</option>
+            <option>Electric</option>
+            <option>Hybrid</option>
+            <option>Other</option>
+            <option selected>Petrol</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="mileage">Mileage (mi)</label>
+          <input type="number" id="mileage" name="mileage" min="0" value="20000" required>
+        </div>
+
+        <div class="field">
+          <label for="tax">Tax (£)</label>
+          <input type="number" id="tax" name="tax" min="0" value="145" required>
+        </div>
+
+        <div class="field">
+          <label for="mpg">MPG</label>
+          <input type="number" id="mpg" name="mpg" min="1" step="0.1" value="55" required>
+        </div>
+
+        <div class="field">
+          <label for="engineSize">Engine Size (L)</label>
+          <input type="number" id="engineSize" name="engineSize" min="0" step="0.1" value="1.2" required>
+        </div>
+
+      </div>
+
+      <button type="submit" id="submit-btn">Estimate Price</button>
+    </form>
+
+    <div id="result" class="result" hidden aria-live="polite">
+      <span class="result__label">Estimated Price</span>
+      <span class="result__value" id="result-value">£0</span>
+    </div>
+
+    <p id="error" class="error" hidden aria-live="polite"></p>
+  </main>
+
+  <a class="credit" href="https://abhishekgroverai.netlify.app" target="_blank" rel="noopener noreferrer">Abhishek Grover</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
