@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/badge/JavaScript-F472B6?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript">
     <img src="https://img.shields.io/badge/License-MIT-E879F9?style=flat-square" alt="MIT License">
   </p>
-
+ 
   <p>
     <strong>Production-oriented vehicle price prediction powered by machine learning, FastAPI, and a custom web interface.</strong>
   </p>
