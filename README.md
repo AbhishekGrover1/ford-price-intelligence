@@ -1,13 +1,14 @@
 <div align="center">
 
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=3000&pause=1000&color=C084FC&center=true&vCenter=true&width=850&lines=🚗+Ford+Vehicle+Price+Intelligence;End-to-End+Machine+Learning+Pipeline;Random+Forest+•+FastAPI+•+scikit-learn;%7C+Deployed+by+Abhishek+Grover" alt="Typing animation" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=850&lines=🚗+Ford+Vehicle+Price+Intelligence;End-to-End+Machine+Learning+Pipeline;Random+Forest+•+FastAPI+•+scikit-learn;%7C+Deployed+by+Abhishek+Grover" alt="Typing animation" />
 
   <br>
 
+
   <p>
-    <a href="https://ford-price-intelligence-1.onrender.com">
-      <img src="https://img.shields.io/badge/Live%20Demo-46E3B7?style=flat-square&logo=render&logoColor=white" alt="Live Demo">
-    </a>
+   <a href="https://ford-price-intelligence-1.onrender.com">
+  <img src="https://img.shields.io/badge/Live%20Demo-8B5CF6?style=flat-square&logo=render&logoColor=white" alt="Live Demo">
+</a>
     <img src="https://img.shields.io/badge/Python-3.11%2B-8B5CF6?style=flat-square&logo=python&logoColor=white" alt="Python">
     <img src="https://img.shields.io/badge/FastAPI-0.115-10B981?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
     <img src="https://img.shields.io/badge/scikit--learn-1.6-F59E0B?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn">
