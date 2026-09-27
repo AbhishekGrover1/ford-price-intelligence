@@ -1,30 +1,24 @@
-<div align="center">
-
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=850&lines=🚗+Ford+Vehicle+Price+Intelligence;End-to-End+Machine+Learning+Pipeline;Random+Forest+•+FastAPI+•+scikit-learn;%7C+Deployed+by+Abhishek+Grover" alt="Typing animation" />
-
-  <br>
-
-
-  <p>
+# *Ford Price Intelligence*
+ <p>
    <a href="https://ford-price-intelligence-1.onrender.com">
   <img src="https://img.shields.io/badge/Live%20Demo-8B5CF6?style=flat-square&logo=render&logoColor=white" alt="Live Demo">
 </a>
-    <img src="https://img.shields.io/badge/Python-3.11%2B-8B5CF6?style=flat-square&logo=python&logoColor=white" alt="Python">
+   <img src="https://img.shields.io/badge/Python-3.11%2B-FF0000?style=flat-square&logo=python&logoColor=white" alt="Python">
     <img src="https://img.shields.io/badge/FastAPI-0.115-10B981?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
     <img src="https://img.shields.io/badge/scikit--learn-1.6-F59E0B?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn">
     <img src="https://img.shields.io/badge/JavaScript-F472B6?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript">
     <img src="https://img.shields.io/badge/License-MIT-E879F9?style=flat-square" alt="MIT License">
   </p>
  
-  <p>
-    <strong>Production-oriented vehicle price prediction powered by machine learning, FastAPI, and a custom web interface.</strong>
-  </p>
+
+##### *Production-oriented vehicle price prediction powered by machine learning, FastAPI, and a custom web interface*
+
 
 </div>
 
 ---
 
-## 📑 Table of Contents
+## *Table of Contents*
 
 * [Overview](#-overview)
 * [Live Demo](#-live-demo)
@@ -41,7 +35,7 @@
 
 ---
 
-## 🔮 Overview
+## *Overview*
 
 **Ford Price Intelligence** is an end-to-end machine learning application designed to estimate Ford vehicle market prices from structured automotive data.
 
@@ -58,7 +52,7 @@ The trained model is serialized using `joblib` and integrated directly into the 
 
 ---
 
-## 🚀 Live Demo
+##  *Live Demo*
 
 ### [Ford Price Intelligence](https://ford-price-intelligence-1.onrender.com)
 
@@ -70,7 +64,7 @@ You can enter vehicle information and receive a machine-learning-based price pre
 
 ---
 
-## ✨ Key Features
+##  *Key Features*
 
 | Feature                     | Description                                                            |
 | --------------------------- | ---------------------------------------------------------------------- |
@@ -86,7 +80,7 @@ You can enter vehicle information and receive a machine-learning-based price pre
 
 ---
 
-## 🏗️ Architecture
+##  *Architecture*
 
 The application follows a layered machine learning architecture that transforms raw automotive data into real-time vehicle price intelligence.
 
@@ -123,7 +117,7 @@ flowchart TD
     end
 ```
 
-### Pipeline Flow
+### *Pipeline Flow*
 
 ```text
 Ford Dataset
@@ -158,7 +152,7 @@ Real-Time Price Prediction
 
 ---
 
-## 🧰 Tech Stack
+##  *Tech Stack*
 
 | Layer                   | Technology                             |
 | ----------------------- | -------------------------------------- |
@@ -176,7 +170,7 @@ Real-Time Price Prediction
 | **Deployment**          | Render                                 |
 | **Typography**          | Fraunces, IBM Plex Sans, IBM Plex Mono |
 
-### Core Stack
+### *Core Stack*
 
 <p align="center">
 
@@ -192,7 +186,7 @@ Real-Time Price Prediction
 
 ---
 
-## 📁 Project Structure
+##  *Project Structure*
 
 ```text
 ford-price-intelligence/
@@ -225,7 +219,7 @@ ford-price-intelligence/
 
 ---
 
-## ⚙️ Getting Started
+##  *Getting Started*
 
 ### 1. Clone the repository
 
@@ -307,7 +301,7 @@ Content-Type: application/json
 
 ---
 
-## ☁️ Deployment
+##  *Deployment*
 
 The application is structured for cloud deployment using:
 
@@ -338,7 +332,7 @@ uvicorn main:app --host 0.0.0.0 --port $PORT
 
 ---
 
-## 🧠 Engineering Notes
+## *Engineering Notes*
 
 ### Machine Learning
 
@@ -380,7 +374,7 @@ This keeps the interface lightweight while maintaining direct communication with
 
 ---
 
-## 🎯 Project Focus
+## *Project Focus*
 
 This project demonstrates practical implementation of:
 
@@ -398,36 +392,19 @@ This project demonstrates practical implementation of:
 
 ---
 
-## 📜 License
+##  *License*
 
 This project is licensed under the **MIT License**.
 
 ---
 
-## 🤝 Connect
-
-<div align="center">
-
-### Abhishek Grover
-
-**AI/ML Engineer**
-
-Building practical systems around **Machine Learning · LLMs · RAG · AI Agents · MLOps**
+##  *Connect*
 
 <br>
 
-<a href="https://github.com/AbhishekGrover1">
-  <img src="https://img.shields.io/badge/GitHub-111827?style=flat-square&logo=github&logoColor=white"/>
-</a>
-
-<a href="https://www.linkedin.com/in/abhishek-grover07/">
-  <img src="https://img.shields.io/badge/LinkedIn-8B5CF6?style=flat-square&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="https://abhishekgroverai.netlify.app/">
-  <img src="https://img.shields.io/badge/Portfolio-E879F9?style=flat-square&logo=googlechrome&logoColor=white"/>
-</a>
-
+[![GitHub](https://img.shields.io/badge/GitHub-AbhishekGrover1-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/AbhishekGrover1)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-abhishek--grover07-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/abhishek--grover07)
+[![Email](https://img.shields.io/badge/Email-ss107456%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:ss107456@gmail.com)
 </div>
 
 ---
